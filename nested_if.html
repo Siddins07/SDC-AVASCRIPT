@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "button" value="find large" onclick="fun()">
+    <h1 id="res"></h1>
+   <script>
+    function fun()
+    {
+        let x= Number(prompt("enter the first number:"));
+        let y= Number(prompt("enter the second number:"));
+        let z= Number(prompt("enter the third number:"));
+        if (x>y && x>z)
+        {
+            document.getElementById("res").innerHTML=`${x} is a largest number`; 
+        }
+        if (y>x && y>z)
+        {
+            document.getElementById("res").innerHTML=`${y} is a largest number`; 
+        }
+        else
+        {
+          document.getElementById("res").innerHTML=`${z} is a largest number`;   
+        }
+    }
+    </script>
+</body>
+</html>

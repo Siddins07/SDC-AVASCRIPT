@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1> user details </h1>
+<body>
+    <label> username </label>
+    <input type="text" id ="username" ></input><br>
+    <label> password </label>
+    <input type="password" id="password"></body></input><br>
+    <button type="button" onclick="loginfun()">Submit</button>
+    <script>
+        function loginfun(){
+        if( document.getElementById("password").value=="Kmit123$")
+        {
+            alert("succesfully logged in");
+        }
+        else
+        {
+            alert("invalid password");
+        }}
+    </script>
+</body>
+</html>
